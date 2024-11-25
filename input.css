@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    font-size: 14px;
+  }
+  body {
+    @apply bg-primary-cream;
+  }
+}
+
+@layer components {
+  .grid-container {
+    @apply grid grid-cols-1 grid-rows-2 desktop:grid-cols-2 desktop:grid-rows-1 desktop:max-w-[580px];
+  }
+}
+
+@layer utilities {
+  .wider-spacing {
+    letter-spacing: 0.5em;
+  }
+}
